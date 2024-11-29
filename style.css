@@ -1,0 +1,196 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/background.jpg"); /* 배경 이미지 경로 */
+  background-size: cover; /* 화면 전체를 덮도록 설정 */
+  background-position: center; /* 이미지 중앙 정렬 */
+  background-repeat: no-repeat; /* 이미지 반복 금지 */
+  z-index: -1; /* 모든 콘텐츠 뒤로 배치 */
+  filter: brightness(0.07); /* 밝기 조정 */
+  opacity: 0.93; /* 불투명하게 설정 */
+}
+
+/* 콘텐츠 설정 */
+/* General Flip Container Style */
+.flip-container {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  perspective: 1000px;
+  z-index: 1;
+}
+
+/* Flip Container 1: South Korea */
+.flip-south-korea {
+  top: 47%;
+  right: 46%; /* Position for South Korea */
+}
+
+/* Flip Container 2: USA */
+.flip-usa {
+  top: 30%;
+  left: 64%; /* Position for USA */
+}
+
+/* Flip Container 3: Japan */
+.flip-japan {
+  top: 22%;
+  left: 20%; /* Position for Japan */
+}
+
+/* Flip Container 4: China */
+.flip-china {
+  top: 63%;
+  left: 62%; /* Position for China */
+}
+
+/* Flip Container 5: France */
+.flip-france {
+  top: 47%;
+  left: 79%; /* Position for France */
+}
+
+/* Flip Container 6: Germany */
+.flip-germany {
+  top: 19%;
+  right: 50%; /* Position for Germany */
+}
+
+/* Flip Container 7: Brazil */
+.flip-brazil {
+  top: 54%;
+  left: 10%; /* Position for Brazil */
+}
+
+/* Flip Box */
+.flip-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Flip Box Front and Back */
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+/* Flip Box Front */
+.flip-box-front {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Flip Box Back */
+.flip-box-back {
+  transform: rotateY(180deg);
+}
+
+.hover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Hover Effect */
+.flip-container:hover .flip-box {
+  transform: rotateY(180deg);
+}
+.Korea-dot {
+  position: absolute;
+  width: 8px; /* Dot size */
+  height: 8px; /* Dot size */
+  background-color: red; /* Red color */
+  border-radius: 50%; /* Circle shape */
+  top: 51%; /* Initial vertical position */
+  left: 77.7%; /* Initial horizontal position */
+  transform: translate(-50%, -50%); /* Center the dot */
+  pointer-events: none; /* Allow interaction with underlying elements */
+  z-index: 10; /* Ensure it appears on top */
+}
+
+.USA-dot {
+  position: absolute;
+  width: 8px; /* Dot size */
+  height: 8px; /* Dot size */
+  background-color: red; /* Red color */
+  border-radius: 50%; /* Circle shape */
+  top: 45%; /* Initial vertical position */
+  right: 72.2%; /* Initial horizontal position */
+  transform: translate(-50%, -50%); /* Center the dot */
+  pointer-events: none; /* Allow interaction with underlying elements */
+  z-index: 10; /* Ensure it appears on top */
+}
+.New-dot {
+  position: absolute;
+  width: 8px; /* Dot size */
+  height: 8px; /* Dot size */
+  background-color: red; /* Red color */
+  border-radius: 50%; /* Circle shape */
+  top: 60%; /* Initial vertical position */
+  left: 65.7%; /* Initial horizontal position */
+  transform: translate(-50%, -50%); /* Center the dot */
+  pointer-events: none; /* Allow interaction with underlying elements */
+  z-index: 10; /* Ensure it appears on top */
+}
+.Be-dot {
+  position: absolute;
+  width: 8px; /* Dot size */
+  height: 8px; /* Dot size */
+  background-color: red; /* Red color */
+  border-radius: 50%; /* Circle shape */
+  top: 50%; /* Initial vertical position */
+  left: 74.7%; /* Initial horizontal position */
+  transform: translate(-50%, -50%); /* Center the dot */
+  pointer-events: none; /* Allow interaction with underlying elements */
+  z-index: 10; /* Ensure it appears on top */
+}
+.Mo-dot {
+  position: absolute;
+  width: 8px; /* Dot size */
+  height: 8px; /* Dot size */
+  background-color: red; /* Red color */
+  border-radius: 50%; /* Circle shape */
+  top: 39.5%; /* Initial vertical position */
+  left: 50%; /* Initial horizontal position */
+  transform: translate(-50%, -50%); /* Center the dot */
+  pointer-events: none; /* Allow interaction with underlying elements */
+  z-index: 10; /* Ensure it appears on top */
+}
+.Bn-dot {
+  position: absolute;
+  width: 8px; /* Dot size */
+  height: 8px; /* Dot size */
+  background-color: red; /* Red color */
+  border-radius: 50%; /* Circle shape */
+  top: 43%; /* Initial vertical position */
+  left: 51.2%; /* Initial horizontal position */
+  transform: translate(-50%, -50%); /* Center the dot */
+  pointer-events: none; /* Allow interaction with underlying elements */
+  z-index: 10; /* Ensure it appears on top */
+}
+.LA-dot {
+  position: absolute;
+  width: 8px; /* Dot size */
+  height: 8px; /* Dot size */
+  background-color: red; /* Red color */
+  border-radius: 50%; /* Circle shape */
+  top: 50%; /* Initial vertical position */
+  left: 17.6%; /* Initial horizontal position */
+  transform: translate(-50%, -50%); /* Center the dot */
+  pointer-events: none; /* Allow interaction with underlying elements */
+  z-index: 10; /* Ensure it appears on top */
+}
